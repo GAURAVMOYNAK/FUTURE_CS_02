@@ -103,27 +103,79 @@
 
 ---
 
-## Installation
+# Installation Instructions for Password Analyzer Tool
 
-### Prerequisites
+This guide explains how to install and run the Password Analyzer Tool on both Linux and Windows.
 
-- **Python 3.x** is required.
-- **Tkinter** is bundled with Python (install via your package manager if necessary).
+## Prerequisites
 
-### Setup Steps
+### Windows
+- **Python 3.x**: Download and install from [python.org](https://www.python.org/downloads/).  
+  (Tkinter is bundled with Python on Windows.)
+- **Git (optional)**: Download from [git-scm.com](https://git-scm.com/) if you wish to clone the repository.
 
-1. **Clone or Download:**
-   - Clone the repository or download the source code.
+### Linux
+- **Python 3.x**: Most distributions include Python 3; verify by running:
+  ```bash
+  python3 --version
+  ```
+- **Tkinter**: If not installed, use your package manager:
+  - **Ubuntu/Debian:**
+    ```bash
+    sudo apt-get update
+    sudo apt-get install python3-tk
+    ```
+  - **Fedora:**
+    ```bash
+    sudo dnf install python3-tkinter
+    ```
+  - **Arch Linux:**
+    ```bash
+    sudo pacman -S tk
+    ```
 
-2. **Place Icon Files:**
-   - Ensure that `change_icon.png` and `delete_icon.png` are in the same directory as `password_analyzer.py`.
+## Setup Steps
 
-3. **(Optional) Weak Passwords File:**
-   - Place a `weak_passwords.txt` file in the directory with one weak/common password per line. If not provided, a default set is used.
+1. **Clone or Download the Repository**
 
-### Running the Application
+   **Using Git (Windows or Linux):**
+   ```bash
+   git clone https://github.com/GAURAVMOYNAK/FUTURE_CS_02.git
+   ```
 
-Open a terminal in the project directory and run:
+   **Or Download ZIP:**
+   - Visit [https://github.com/GAURAVMOYNAK/FUTURE_CS_02](https://github.com/GAURAVMOYNAK/FUTURE_CS_02), click the "Code" button, and select "Download ZIP".
+   - Extract the ZIP file to your desired location.
 
-```bash
-python password_analyzer.py
+2. **Navigate to the Project Directory**
+   ```bash
+   cd FUTURE_CS_02
+   ```
+
+3. **Verify Required Files**
+   - `password_analyzer.py` (main application file)
+   - `change_icon.png` and `delete_icon.png` (optional icon images)
+   - `weak_passwords.txt` (optional; for a list of weak passwords)
+
+4. **Run the Application**
+
+   **On Windows:**
+   - Open Command Prompt or PowerShell in the project directory and run:
+     ```bash
+     python password_analyzer.py
+     ```
+   - If the above command does not work, try:
+     ```bash
+     py password_analyzer.py
+     ```
+
+   **On Linux:**
+   - Open Terminal in the project directory and run:
+     ```bash
+     python3 password_analyzer.py
+     ```
+
+---
+
+Following these steps will set up and run the Password Analyzer Tool on your system.
+
